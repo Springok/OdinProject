@@ -1,0 +1,31 @@
+body{
+  line-height: 0; /* 取消inline-block時,上下兩行之間的空白*/
+}
+.container {
+  width: 600px;
+  max-width: 900px;
+  margin: auto;
+
+}
+
+#navbar {
+  width: 600px;
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+  /*text-align對button有用*/
+}
+
+#navbar > button{
+  text-decoration: none;
+  background-color: #eee;
+}
+
+.square{
+  display: inline-block;
+  background-color: #eee;
+}
+
+.pixelated{
+  background-color: #666;
+}
