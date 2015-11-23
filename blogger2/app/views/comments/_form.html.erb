@@ -1,0 +1,7 @@
+<h3>Post a Comment</h3>
+
+<%= simple_form_for [@article , @comment] do |f| %>
+  <%= f.input :author_name, label: "Your name" %>
+  <%= f.input :body, label: "Your Comment"%>
+  <%= f.submit "Submit", data: {disable_with: "submitting...."} %>
+<% end %>
