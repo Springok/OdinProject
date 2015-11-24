@@ -21,6 +21,7 @@
 
 
 <%= link_to "<<Articles list", articles_path %>
-<%= link_to "Edit article", edit_article_path(@article) %>
-<%= link_to "Delete article", article_path(@article), method: :delete, data: {confirm: "Really delete the article?"} %>
-
+<% if logged_in? %>
+  <%= link_to "Edit article", edit_article_path(@article) %>
+  <%= link_to "Delete article", article_path(@article), method: :delete, data: {confirm: "Really delete the article?"} %>
+<% end %>
